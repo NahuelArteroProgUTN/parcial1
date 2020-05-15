@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+
+    <link rel="stylesheet" href="css/contacto.css">
+
+</head>
+<body>
+    <section>
+        <h1>contactame</h1>
+
+        <div class="contenedor_formulario">
+
+            <form name="fvalida">
+                <table>
+                <tr>
+                       <td>Nombre: </td>
+                       <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+                </tr>
+
+                <tr>
+                    <td>Domicilio: </td>
+                    <td><input type="text" name="domicilio" size="30" maxlength="100"></td>
+                </tr>
+
+                <tr>
+                       <td>¿Que tipo de trabajo necesita? </td>
+                       <td><textarea type="text" name="trabajo" rows="10" cols="40" placeholder="instalacion, mantencion, reparacion..."></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>¿En que momento del dia prefiere para la visita?</td>
+                    <td>
+                    <select name=interes>
+                    <option value="Elegir">Elegir
+                    <option value="Mañana">Mañana
+                    <option value="Tarde">Tarde
+                    </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    
+                    <td>Indique un horario por favor </td>
+
+                    <td><input type="time" name="hora" ></td>
+                 </tr>
+
+                <tr>
+                       <td colspan="2" ><input type="button" value="Enviar" onclick="valida_envia()"></td>
+                </tr>
+                <tr>
+                    <td ><input type="button" value="Volver a la pagina" onclick="location.href='plomero.html'"></td>
+             </tr>
+                </table>
+                </form>
+<script src="js/functions.js"></script>
+</body>
+</html>

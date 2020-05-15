@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+
+section{
+    background: #F7F7F7;
+}
+
+
+.galleria {
+  width: 1250px; 
+  margin: auto;
+}
+
+
+.item {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    justify-content: center;
+    grid-gap: 28px;
+  }
+  .item img  {
+    cursor: pointer;
+    position: relative;
+    display: block;
+  }
